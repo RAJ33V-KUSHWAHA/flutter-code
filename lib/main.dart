@@ -12,7 +12,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-//comment add
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,10 +21,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false, //to remove the debug banner
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
+      initialRoute: myRoutes.homeRoute,
+
       routes: {
         "/": (context) => LoginPage(),
         myRoutes.homeRoute: (context) => HomePage(),
