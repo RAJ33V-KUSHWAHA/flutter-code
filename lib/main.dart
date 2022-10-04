@@ -12,7 +12,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  // yes this is the final branch where u can get all code
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
